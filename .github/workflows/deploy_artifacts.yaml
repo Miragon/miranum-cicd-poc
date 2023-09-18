@@ -1,0 +1,12 @@
+name: deploy process
+on: [workflow_dispatch]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout sources
+      uses: actions/checkout@v3 
+    - name: Pull image
+      run: docker pull miragon/process-ide-cli
+    - name: Deploy process
+      run: docker run miragon/process-ide-cli node main.js deploy -d order-example/order-example-camunda7/src/main/resources -t local
