@@ -18,7 +18,7 @@
         },
         {
           "name": "dev",
-          "url": "https://miranum.miragon.dev:8090"
+          "url": "https://miranum.miragon.dev/rest"
         },
         {
           "name": "test",
