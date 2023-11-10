@@ -9,4 +9,4 @@ jobs:
     - name: Pull image
       run: docker pull miragon/process-ide-cli
     - name: Deploy process
-      run: docker run -v $PWD/order-example/order-example-camunda7/src/main/resources:/app/artifacts miragon/process-ide-cli node main.js deploy -d artifacts -t dev
+      run: docker run -v $PWD/order-example/order-example-camunda7/src/main/resources:/app/artifacts miragon/process-ide-cli node main.js deploy -d artifacts -t test
