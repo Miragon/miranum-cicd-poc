@@ -18,3 +18,40 @@ jobs:
 
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '16'
+
+    - name: Install Dependencies
+      run: |
+        npm install -g bpmnlint dmnlint
+
+    - name: Run BPMN Lint
+    # Find all BPMN files in subdirectories and lint them
+      run: |
+        find . -type f -name '*.bpmn' -exec sh -c 'bpmnlint -c "${0%/*}/.bpmnlintrc" "$0"' {} \;
+        if [ $? -eq 0 ]; then
+          echo "BPMN linting passed"
+        else
+          echo "BPMN linting failed"
+          exit 1
+        fi
+
+    - name: Run DMN Lint
+    # Find all DMN files in subdirectories and lint them
+      run: |
+        find . -type f -name '*.dmn' -exec sh -c 'dmnlint -c "${0%/*}/.dmnlintrc" "$0"' {} \;
+        if [ $? -eq 0 ]; then
+          echo "DMN linting passed"
+        else
+          echo "DMN linting failed"
+          exit 1
+        fi
