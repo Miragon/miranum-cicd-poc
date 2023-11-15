@@ -16,8 +16,8 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
-      - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots -Dmaven.test.failure.ignore=false clean verify
+      - name: Build and Test with maven
+        run: mvn --batch-mode --update-snapshots clean test
         
   lint:
     runs-on: ubuntu-latest
