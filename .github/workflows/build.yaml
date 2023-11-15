@@ -17,7 +17,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Build and Test with maven
-        run: mvn --batch-mode --update-snapshots clean test
+        run: mvn --batch-mode --update-snapshots verify
         
   lint:
     runs-on: ubuntu-latest

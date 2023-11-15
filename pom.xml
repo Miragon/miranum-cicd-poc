@@ -72,7 +72,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surfire.plugin.version}</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
