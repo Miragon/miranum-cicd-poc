@@ -14,15 +14,15 @@
       "targetEnvironments": [
         {
           "name": "local",
-          "url": "http://localhost:8090/engine-rest"
+          "url": "https://miranum.miragon.dev/deployment"
         },
         {
           "name": "dev",
-          "url": "https://miranum.miragon.dev/rest"
+          "url": "https://miranum.miragon.dev/deployment"
         },
         {
           "name": "test",
-          "url": "http://localhost:8090"
+          "url": "https://miranum.miragon.dev/deployment"
         }
       ]
     }
