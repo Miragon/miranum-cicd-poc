@@ -1,0 +1,16 @@
+{
+  "name": "unified-artifact",
+  "version": "1.0.0",
+  "description": "This npm package offers a centralized solution for sharing a consistent artifact base.",
+  "files": ["*.json"], 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AminYacine/element-templates.git"
+  },
+  "author": "Amin Yacine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AminYacine/element-templates/issues"
+  },
+  "homepage": "https://github.com/AminYacine/element-templates#readme"
+}
