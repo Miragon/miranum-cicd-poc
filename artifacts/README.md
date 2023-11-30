@@ -12,6 +12,10 @@ Welcome to the Git repository for the UnifiedArtifact npm package. This package 
 1. Install the npm package: `npm install unified-artifact`
 2. Access JSON files directly: `const artifact = require('unified-artifact/your-file.json');`
 
+## Customize
+- The current setup of this project is such that only the contents of the element-templates folder are being published in the npm package. This of course can be andjusted to ones needs to inlcude all relevant files.
+- To include different folders or files, modify the *files* property in the package.json file accordingly.
+
 ## Contributing
 We welcome contributions! Feel free to open issues, submit pull requests, or join the discussion.
 

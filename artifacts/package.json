@@ -5,12 +5,12 @@
   "files": ["*.json"], 
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AminYacine/element-templates.git"
+    "url": "git+https://github.com/Miragon/miranum-cicd-poc.git"
   },
   "author": "Amin Yacine",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AminYacine/element-templates/issues"
+    "url": "https://github.com/Miragon/miranum-cicd-poc/issues"
   },
-  "homepage": "https://github.com/AminYacine/element-templates#readme"
+  "homepage": "https://github.com/Miragon/miranum-cicd-poc#readme"
 }
