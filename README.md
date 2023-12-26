@@ -34,7 +34,7 @@ There are three main [workflows](.github/workflows) that are implemented in this
 ### [Build](.github/workflows/build.yaml)
 In the build workflow the project is built and every unit test is executed to ensure code quality. On test failure the build job
 is going to fail. The linting job checks every .bpmn and .dmn file against the specified linting rules 
-([bpmn](.bpmnlintrc), [dmn](.dmnlintrc)). 
+([bpmn](artifacts/.bpmnlintrc), [dmn](artifacts/.dmnlintrc)). 
 
 Note that the linting job will not fail if any errors or warnings are detected 
 during the check-up. 
