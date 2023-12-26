@@ -1,6 +1,6 @@
 {
   "name": "unified-artifact",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This npm package offers a centralized solution for sharing a consistent artifact base.",
   "files": ["*.json"], 
   "repository": {
